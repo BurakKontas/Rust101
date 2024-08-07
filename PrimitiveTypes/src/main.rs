@@ -48,8 +48,20 @@ fn boolean() {
     println!("Size of is_admin is {} bytes", std::mem::size_of_val(&is_admin));
 }
 
+fn char() {
+    let a: char = 'a';
+    let b: char = 'b';
+    let c: char = 'c';
+
+    println!("a: {}, b: {}, c: {}", a, b, c);
+    println!("Size of a is {} bytes", std::mem::size_of_val(&a));
+    println!("Size of b is {} bytes", std::mem::size_of_val(&b));
+    println!("Size of c is {} bytes", std::mem::size_of_val(&c));
+}
+
 fn main() {
     // integer();
     // float();
-    boolean();
+    // boolean();
+    // char();
 }
